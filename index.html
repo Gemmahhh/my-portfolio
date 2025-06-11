@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gemma | Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+    />
+
+    <!-- FontAwesome -->
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="chiamaka.css" />
+
+    <!-- JS -->
+    <script defer src="/true chi portfolio/Chi portfolio.js"></script>
+  </head>
+  <body id="bodyPart" class="bg-light text-dark">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">GEMMA</a>
+        <button id="dark-mode" class="btn btn-outline-dark">🌑</button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navLinks">
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#works">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="d-flex align-items-center text-white" style="height: 100vh;">
+      <div class="container">
+        <div class="content ms-3">
+          <p class="fs-2">HELLO!</p>
+          <h1 id="name" class="fw-bold display-3">I'm <span class="text-primary">Okpe Chiamaka</span></h1>
+          <p id="description" class="lead">A Data Engineer</p>
+          <div class="mt-4 d-flex gap-3">
+            <a href="#contact" class="btn btn-primary rounded-pill">Hire Me</a>
+            <a href="#projects" class="btn btn-outline-dark rounded-pill">My Works</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h1 class="text-center mb-5 text-secondary">About</h1>
+        <div class="row align-items-center">
+          <div class="col-md-5 text-center">
+            <div class="border border-4 border-warning rounded-4 p-3">
+              <img src="images/chi profile picture.jpg" alt="Chi" class="img-fluid rounded-4" />
+            </div>
+          </div>
+          <div class="col-md-7">
+            <p>
+              I'm a data professional passionate about turning raw data into actionable insights and automated workflows.
+              I specialize in end-to-end data engineering, building cloud-based pipelines with AWS and Prefect, and developing ETL and machine learning solutions in Python.
+            </p>
+            <p><strong>Technical Skills</strong>: AWS, Prefect, Python, ETL, Data Wrangling, Machine Learning, Cloud Integration, Pipeline Orchestration, Network Analysis, Pandas, NumPy</p>
+            <a target="_blank" href="https://drive.google.com/file/d/1bcBPcs2hOzKkLWoquF-rLVhxXdRiopFB/view?usp=sharing" class="btn btn-outline-warning rounded-pill mt-3">View Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="works" class="py-5 bg-light animate">
+      <div class="container text-center">
+        <h1 class="mb-5">What I Do</h1>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <i class="fa-solid fa-magnifying-glass-chart display-4 mb-3"></i>
+            <h2>Data Engineering</h2>
+            <p>Building pipelines, ETL systems, and cloud solutions with AWS, Python, and more.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="fa-brands fa-nfc-directional display-4 mb-3"></i>
+            <h2>Pipeline Orchestration</h2>
+            <p>Orchestration of ETL workflows using airflow and Prefect.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="fa-solid fa-laptop-code display-4 mb-3"></i>
+            <h2>Data Analysis</h2>
+            <p>Providing actionable insights from complex datasets using SQL, Python, and dashboards.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-5">
+      <div class="container">
+        <h1 class="text-center mb-5">My Projects</h1>
+        <div class="row g-4">
+
+          <!-- Project Card -->
+           <div class="col-md-4">
+            <div class="card h-100 ">
+              <img src="images/Modern Real Estate Analytics Pipeline picture.gif"
+               class="card-img-top" alt="Bank Marketing Database" />
+              <div class="card-body">
+                <span class="badge bg-secondary mb-2">Data Engineering</span>
+                <h5 class="card-title">Building a Modern Real Estate Analytics Pipeline: From Redfin to Power BI</h5>
+                <p class="card-text">
+                In this project, I built an end to end data pipeline that starts with Apache Airflow running on an AWS EC2 instance. I used Python with pandas to extract raw TSV files, chunking them to avoid memory overload, and cleaning messy fields. The transformed data then flows into AWS S3, where I set up Snowpipe with Snowflake to automatically ingest new files the moment they land, no manual triggers needed.
+                For the data warehouse setup, I designed Snowflake tables with precision. All my development happened in VS Code connected directly to the EC2 instance, which let me iterate quickly.  
+                  <b class="stack-used">Apache Airflow, AWS EC2 Instance, Python, SQL, Snowflake, Snowpipe, AWS S3, Power BI, Jupyter Notebook</b></p>    <div class="d-flex gap-2">
+                  <a target="_blank" href="https://github.com/Gemmahhh/Redfin_pipeline_using_airflow/tree/main"  class="btn btn-primary btn-sm" target="_blank">View Project</a>
+                  <a target="_blank" href="https://medium.com/@okpeamaka8/building-a-modern-real-estate-analytics-pipeline-from-redfin-to-power-bi-336ce996ade4" class="btn btn-outline-primary btn-sm">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="images/end to end workflow real image.gif"
+               class="card-img-top" style="border: 1px solid black;" alt="Data Warehouse Architecture in BigQuery" />
+              <div class="card-body">
+                <span class="badge bg-secondary mb-2">Data Engineering</span>
+                <h5 class="card-title">End-to-End Data Engineering with AWS</h5>
+                <p class="card-text">This project involved creating a scalable AWS-based data pipeline to facilitate data-driven decisions, using S3, Glue, Athena, and Jupyter for data processing and modeling. The cleaned data was structured into a star schema, loaded into Redshift, and visualized in Power BI to extract key insights. The work highlights my expertise in developing cloud-based pipelines that empower analytics teams to derive business value from complex datasets.</p>
+                  
+                <p>
+                    <b class="stack-used">Stacks Used: S3 bucket, AWS Athena, AWS Glue, Python, SQL, Jupyter Notebook, Redshift, Power BI</b></p><div class="d-flex gap-2">
+                  <a target="_blank" href="https://medium.com/@okpeamaka8/end-to-end-data-engineering-project-using-aws-services-3055a60ae330" class="btn btn-primary btn-sm" target="_blank">View Project</a>
+                  <a target="_blank" href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="images/prefect project.webp"
+               class="card-img-top" alt="Bank Marketing Database" />
+              <div class="card-body">
+                <span class="badge bg-secondary mb-2">Data Engineering</span>
+                <h5 class="card-title">Orchestring data pipelines with prefect</h5>
+                <p class="card-text">
+                  This pipeline automates data movement from a local system to the cloud, making use of Prefect to orchestrate each step efficiently. It starts by uploading a CSV file to S3, then ingests the data into Snowflake using a SQL COPY command, followed by triggering a dbt Cloud job for transformations. Each step is managed as a Prefect task with built-in retry logic and error handling for robustness. The pipeline uses Prefect’s configuration blocks for secure, reusable connections, integrating S3, Snowflake, and dbt Cloud into a seamless, scalable workflow.</p>
+                <p>
+                  <b class="stack-used">Stacks Used: AWS S3, Prefect, Snowflake, dbt, AWS IAM, Python, SQL, Git</b></p>    <div class="d-flex gap-2">
+                  <a target="_blank" href="https://github.com/Gemmahhh/prefect_orchestration_project"  class="btn btn-primary btn-sm" target="_blank">View Project</a>
+                  <a target="_blank" href="https://medium.com/@okpeamaka8/orchestrating-data-pipelines-with-prefect-a884d5237be6" class="btn btn-outline-primary btn-sm">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="images/SellCheapy dashboard.webp"
+               class="card-img-top" alt="E-commerce Data Analysis" style="height: 250px"/>
+              <div class="card-body">
+                <span class="badge bg-secondary mb-2">Data Analysis</span>
+                <h5 class="card-title">SellCheapy Retail Analysis</h5>
+                <p class="card-text"> 
+                  This project investigated declining sales at SellCheapy Retail by analyzing a complex SQL Server database with over 90 tables, focusing on customer behavior and transaction trends. Key steps included parsing XML data for demographics, merging transaction records, and assessing delivery delays, culminating in Tableau visualizations that pinpointed a sales decline starting in May 2013. The analysis not only improved my SQL and data wrangling skills but also highlighted how structured data exploration can reveal critical business issues, such as potential mismatches in customer preferences or product strategy.
+                </p>
+                <p>
+                  <b class="stack-used">
+                  Stacks Used: Microsoft SQL Server, Tableau, SQL
+                </b>
+                    </p>    <div class="d-flex gap-2">
+                  <a target="_blank" href="https://github.com/Gemmahhh/Sell-Cheapy-Retail-Analysis-using-SQL"  class="btn btn-primary btn-sm" target="_blank">View Project</a>
+                  <a target="_blank" href="https://medium.com/@okpeamaka8/sellcheapy-retail-analysis-9c148be1908b" class="btn btn-outline-primary btn-sm">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="images/zentel performance picture.webp"
+               class="card-img-top" alt="Data Warehouse Architecture in BigQuery" style="height: 250px"/>
+              <div class="card-body">
+                <span class="badge bg-secondary mb-2">Data Engineering</span>
+                <h5 class="card-title">Zentel Network Performance</h5>
+                <p class="card-text"> Zentel Network Performance Datafest
+                  At the 2022 DataFest Hackathon, my team analyzed Zentel's complaint response data, uncovering significant delays 22-second response times and 2-hour resolutions, particularly during peak evening hours. We recommended optimizing operations between 6-9 PM, restructuring teams, and hiring/training staff to boost efficiency. Our data-driven dashboard and actionable insights earned us 1st Runner Up while helping Zentel improve its service performance.</p>   
+                <p>
+                  <b class="stack-used">
+                    Stack Used: Power BI
+                  </b>
+                </p>
+                  <div class="d-flex gap-2">
+                  <a target="_blank" href="https://medium.com/@okpeamaka8/zentel-network-performance-datafest-competition-6c9b1308cc95" 
+                  class="btn btn-outline-primary btn-sm">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="images/data wrangling with udacity.webp"
+               class="card-img-top" alt="Bank Marketing Database" style="height: 250px"/>
+              <div class="card-body">
+                <span class="badge bg-secondary mb-2">Data Engineering</span>
+                <h5 class="card-title">Data wrangling with udacity</h5>
+                <p class="card-text">This project involved wrangling and cleaning diverse dog-rating data from three sources, a CSV, TSV, and Twitter’s API via Tweepy, focused on the viral '@WeRateDogs' account. Using Python (Pandas, Tweepy) and Excel, I standardized timestamps, merged dog categories, and filtered noise to reveal insights like top dog breeds and audience engagement trends. The Udacity-approved outcome honed my skills in API integration, data cleaning, and exploratory analysis, demonstrating end-to-end data handling from raw sources to actionable insights.
+                </p><p><b class="stack-used">
+                  Stacks Used: Twitter's API, Python, Microsoft Excel, Jupyther Notebook 
+                </b>
+                  </p>    <div class="d-flex gap-2">
+                  <a target="_blank" href="https://github.com/Gemmahhh/Data-wrangling-on-udacity-90fef90aa7c0"  class="btn btn-primary btn-sm" target="_blank">View Project</a>
+                  <a target="_blank" href="https://medium.com/@okpeamaka8/data-wrangling-on-udacity-90fef90aa7c0" class="btn btn-outline-primary btn-sm">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5 mx-auto">
+            <div class="card h-100">
+              <img src="images/choong-deng-xiang--WXQm_NTK0U-unsplash.jpg"
+               class="card-img-top" alt="Bank Marketing Database" style="height: 250px"/>
+              <div class="card-body">
+                <span class="badge bg-secondary mb-2">Data Analysis</span>
+                <h5 class="card-title">The Look E-commerce Data Analysis</h5>
+                <p class="card-text">This Power BI project analyzed Adventure Works’ production data to identify inefficiencies in manufacturing operations, including scrap patterns, delays, and output trends. After cleaning and transforming multi-table datasets using Power Query and DAX, I built a dynamic data model with custom measures and time intelligence for granular analysis. The interactive dashboard featured an executive KPI summary, Key Influencers visuals pinpointing scrap drivers, and drill-down capabilities by product and location.  </p><p><b class="stack-used">
+                  Stack Used: Power BI
+                </b>
+                  </p>   
+                <div class="d-flex gap-2">
+                  <a target="_blank" href="https://github.com/Gemmahhh/Adventure-Works-Production-Analysis"  class="btn btn-primary btn-sm" target="_blank">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+         
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5 bg-dark text-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2>Contact</h2>
+          <h1>Get In Touch!</h1>
+        </div>
+        <form id="contactForm" class="mx-auto" style="max-width: 600px;">
+          <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Your email address" required />
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject:</label>
+            <input type="text" class="form-control" id="subject" placeholder="Email subject" required />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message:</label>
+            <textarea id="message" class="form-control" rows="5" placeholder="Type your message" required></textarea>
+          </div>
+          <button type="submit" id="submitBtn" class="btn btn-warning w-100">Submit</button>
+          <div id="formStatus"></div>
+        </form>
+
+        <div class="d-flex justify-content-center gap-4 mt-4">
+          <a target="_blank" href="https://medium.com/@okpeamaka8"><i class="fab fa-medium-m fa-2x text-light"></i></a>
+          <a target="_blank" href="https://x.com/Amaka__Gemma"><i class="fab fa-twitter fa-2x text-light"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/okpe-chiamaka-doris-gemmahh/"><i class="fab fa-linkedin fa-2x text-light"></i></a>
+          <a target="_blank" href="https://github.com/Gemmahhh"><i class="fab fa-github fa-2x text-light"></i></a>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
