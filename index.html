@@ -70,8 +70,8 @@
         <h1 class="text-center mb-5 text-secondary">About</h1>
         <div class="row align-items-center">
           <div class="col-md-5 text-center">
-            <div class="border border-4 border-warning rounded-4 p-3">
-              <img src="images/chi profile picture.jpg" alt="Chi" class="img-fluid rounded-4" />
+            <div class="border border-4 border-warning rounded-4 p-3 mx-auto" style="height: 420px; max-width: 300px;">
+              <img src="images/chi profile picture.jpg" alt="Chi" class="img-fluid rounded-4" style="max-height: 380px;  min-width: 260px;" />
             </div>
           </div>
           <div class="col-md-7">
@@ -125,11 +125,11 @@
                 <span class="badge bg-secondary mb-2">Data Engineering</span>
                 <h5 class="card-title">Building a Modern Real Estate Analytics Pipeline: From Redfin to Power BI</h5>
                 <p class="card-text">
-                In this project, I built an end to end data pipeline that starts with Apache Airflow running on an AWS EC2 instance. I used Python with pandas to extract raw TSV files, chunking them to avoid memory overload, and cleaning messy fields. The transformed data then flows into AWS S3, where I set up Snowpipe with Snowflake to automatically ingest new files the moment they land, no manual triggers needed.</p>
+                In this project, I built an end to end data pipeline that starts with Apache Airflow running on an AWS EC2 instance. I used Python with pandas to extract raw TSV files, chunking them to avoid memory overload, and cleaning messy fields. The transformed data then flows into AWS S3, where I set up Snowpipe with Snowflake to automatically ingest new files the moment they land, no manual triggers needed.
                 For the data warehouse setup, I designed Snowflake tables with precision. All my development happened in VS Code connected directly to the EC2 instance, which let me iterate quickly.  
-                 <p> <b class="stack-used">Apache Airflow, AWS EC2 Instance, Python, SQL, Snowflake, Snowpipe, AWS S3, Power BI, Jupyter Notebook</b></p>    <div class="d-flex gap-2">
-                  <a target="_blank" href="https://github.com/Gemmahhh/Redfin_pipeline_using_airflow/tree/main"  class="btn btn-primary btn-sm" target="_blank">View Project</a>
-                  <a target="_blank" href="https://medium.com/@okpeamaka8/building-a-modern-real-estate-analytics-pipeline-from-redfin-to-power-bi-336ce996ade4" class="btn btn-outline-primary btn-sm">Read More</a>
+                  <b class="stack-used">Apache Airflow, AWS EC2 Instance, Python, SQL, Snowflake, Snowpipe, AWS S3, Power BI, Jupyter Notebook</b></p>    <div class="d-flex gap-2">
+                  <a target="_blank" href="https://github.com/Gemmahhh/Redfin_pipeline_using_airflow/tree/main"  class="btn btn-primary btn-sm" target="_blank">Github</a>
+                  <a target="_blank" href="https://medium.com/@okpeamaka8/building-a-modern-real-estate-analytics-pipeline-from-redfin-to-power-bi-336ce996ade4" class="btn btn-outline-primary btn-sm">Medium Article</a>
                 </div>
               </div>
             </div>
@@ -146,8 +146,7 @@
                   
                 <p>
                     <b class="stack-used">Stacks Used: S3 bucket, AWS Athena, AWS Glue, Python, SQL, Jupyter Notebook, Redshift, Power BI</b></p><div class="d-flex gap-2">
-                  <a target="_blank" href="https://medium.com/@okpeamaka8/end-to-end-data-engineering-project-using-aws-services-3055a60ae330" class="btn btn-primary btn-sm" target="_blank">View Project</a>
-                  <a target="_blank" href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                  <a target="_blank" href="https://medium.com/@okpeamaka8/end-to-end-data-engineering-project-using-aws-services-3055a60ae330" class="btn btn-primary btn-sm" target="_blank">Medium Article</a>
                 </div>
               </div>
             </div>
@@ -164,8 +163,8 @@
                   This pipeline automates data movement from a local system to the cloud, making use of Prefect to orchestrate each step efficiently. It starts by uploading a CSV file to S3, then ingests the data into Snowflake using a SQL COPY command, followed by triggering a dbt Cloud job for transformations. Each step is managed as a Prefect task with built-in retry logic and error handling for robustness. The pipeline uses Prefect’s configuration blocks for secure, reusable connections, integrating S3, Snowflake, and dbt Cloud into a seamless, scalable workflow.</p>
                 <p>
                   <b class="stack-used">Stacks Used: AWS S3, Prefect, Snowflake, dbt, AWS IAM, Python, SQL, Git</b></p>    <div class="d-flex gap-2">
-                  <a target="_blank" href="https://github.com/Gemmahhh/prefect_orchestration_project"  class="btn btn-primary btn-sm" target="_blank">View Project</a>
-                  <a target="_blank" href="https://medium.com/@okpeamaka8/orchestrating-data-pipelines-with-prefect-a884d5237be6" class="btn btn-outline-primary btn-sm">Read More</a>
+                  <a target="_blank" href="https://github.com/Gemmahhh/prefect_orchestration_project"  class="btn btn-primary btn-sm" target="_blank">Github</a>
+                  <a target="_blank" href="https://medium.com/@okpeamaka8/orchestrating-data-pipelines-with-prefect-a884d5237be6" class="btn btn-outline-primary btn-sm">Medium Article</a>
                 </div>
               </div>
             </div>
@@ -186,8 +185,8 @@
                   Stacks Used: Microsoft SQL Server, Tableau, SQL
                 </b>
                     </p>    <div class="d-flex gap-2">
-                  <a target="_blank" href="https://github.com/Gemmahhh/Sell-Cheapy-Retail-Analysis-using-SQL"  class="btn btn-primary btn-sm" target="_blank">View Project</a>
-                  <a target="_blank" href="https://medium.com/@okpeamaka8/sellcheapy-retail-analysis-9c148be1908b" class="btn btn-outline-primary btn-sm">Read More</a>
+                  <a target="_blank" href="https://github.com/Gemmahhh/Sell-Cheapy-Retail-Analysis-using-SQL"  class="btn btn-primary btn-sm" target="_blank">Github</a>
+                  <a target="_blank" href="https://medium.com/@okpeamaka8/sellcheapy-retail-analysis-9c148be1908b" class="btn btn-outline-primary btn-sm">Medium Article</a>
                 </div>
               </div>
             </div>
@@ -209,7 +208,7 @@
                 </p>
                   <div class="d-flex gap-2">
                   <a target="_blank" href="https://medium.com/@okpeamaka8/zentel-network-performance-datafest-competition-6c9b1308cc95" 
-                  class="btn btn-outline-primary btn-sm">Read More</a>
+                  class="btn btn-outline-primary btn-sm">Medium Article</a>
                 </div>
               </div>
             </div>
@@ -227,8 +226,8 @@
                   Stacks Used: Twitter's API, Python, Microsoft Excel, Jupyther Notebook 
                 </b>
                   </p>    <div class="d-flex gap-2">
-                  <a target="_blank" href="https://github.com/Gemmahhh/Data-wrangling-on-udacity-90fef90aa7c0"  class="btn btn-primary btn-sm" target="_blank">View Project</a>
-                  <a target="_blank" href="https://medium.com/@okpeamaka8/data-wrangling-on-udacity-90fef90aa7c0" class="btn btn-outline-primary btn-sm">Read More</a>
+                  <a target="_blank" href="https://github.com/Gemmahhh/Data-Wrangling-using-python"  class="btn btn-primary btn-sm" target="_blank">Github</a>
+                  <a target="_blank" href="https://medium.com/@okpeamaka8/data-wrangling-on-udacity-90fef90aa7c0" class="btn btn-outline-primary btn-sm">Medium Article</a>
                 </div>
               </div>
             </div>
@@ -246,7 +245,7 @@
                 </b>
                   </p>   
                 <div class="d-flex gap-2">
-                  <a target="_blank" href="https://github.com/Gemmahhh/Adventure-Works-Production-Analysis"  class="btn btn-primary btn-sm" target="_blank">View Project</a>
+                  <a target="_blank" href="https://github.com/Gemmahhh/Adventure-Works-Production-Analysis"  class="btn btn-primary btn-sm" target="_blank">Github</a>
                 </div>
               </div>
             </div>
